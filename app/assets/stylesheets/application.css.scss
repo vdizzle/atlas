@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #939393;
+  font-size: 18px;
+  font-weight: 400;
+  color: #939393;
+  line-height: 1.65em;
+  height:100%;
+  background:#fff;
+  margin:0;
+  padding:0;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 1.2em;
+}
+
+h2 {
+  font-size: 48px;
+  color: #515357;
+}
+
+h5 {
+  color: #818181;
+  font-size: 16px;
+}
+
+.white {
+  color: #fff;
+}
+
+.centered {
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+nav {
+  opacity: 1;
+  position: fixed;
+  width: 100%;
+  padding: 10px 30px;
+  background: transparent;
+  text-align: right;
+  z-index: 10;
+  transition: background .3s;
+  white-space: nowrap;
+  transition-duration: .3s,.6s;
+  transition-property: background,opacity;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    display: block;
+
+    li {
+      display: inline-block;
+      margin: 0 20px;
+
+      a {
+        text-decoration: none;
+        font-size: 14px;
+        color: #dcdcdc;
+        transition: color .3s;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+nav.scrolled {
+  background: #f9f9f9;
+}
+
+section {
+  position: relative;
+  overflow: hidden;
+  padding: 150px 30px;
+}
+
+section.main-image {
+  background-image: url("main-img.jpg");
+}
+
+section.one {
+  padding-top: 210px;
+
+  &:before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    background-image: linear-gradient(45deg, rgba(26, 27, 28, 0.7),rgba(44, 46, 47, 0.6));
+  }
+}
+
+section.two {
+  background: #fff;
+}
+
+.feature-overview {
+  margin-top: 50px;
+  background: #f9f9f9;
+
+  &:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+  }
+
+  .feature {
+    float: left;
+    border-right: 2px solid #ebebeb;
+    min-height: 200px;
+    width: 20%;
+    padding: 30px;
+
+    img {
+      width: 40%;
+      height: 40%;
+    }
+  }
+}
+
+section.three {
+  background-image: linear-gradient(45deg, #00a1dc, rgba(0, 161, 220, 0.7));
+}

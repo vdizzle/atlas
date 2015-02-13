@@ -1,0 +1,37 @@
+body {
+  font-family: "Meta-Normal",sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #939393;
+  line-height: 1.65em;
+  height: 100%;
+  background: #fff;
+  margin: 0;
+  padding: 0; }
+
+nav {
+  opacity: 1;
+  position: fixed;
+  width: 100%;
+  padding: 10px 30px;
+  background: transparent;
+  text-align: right;
+  z-index: 10;
+  transition: background .3s;
+  white-space: nowrap;
+  transition-duration: .3s,.6s;
+  transition-property: background,opacity; }
+
+nav .container {
+  position: relative;
+  text-align: right;
+  padding-left: 150px; }
+
+nav ul {
+  display: none;
+  padding: 30px 0; }
+
+nav li {
+  display: block;
+  background: #2c2e2f;
+  text-align: left; }
