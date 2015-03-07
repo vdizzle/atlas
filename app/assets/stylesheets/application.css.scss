@@ -23,6 +23,10 @@ h1 {
 h2 {
   font-size: 52px;
   color: #515357;
+
+  &.main {
+    line-height: 60px;
+  }
 }
 
 h5 {
@@ -48,9 +52,18 @@ h5 {
   }
 }
 
-.container {
+.container,
+.narrow-container {
   position: relative;
   margin: 0 auto;
+}
+
+.container {
+  width: 72%;
+}
+
+.narrow-container {
+  width: 48%;
 }
 
 nav {
@@ -119,17 +132,34 @@ nav.scrolled {
 section {
   position: relative;
   overflow: hidden;
-  padding: 150px 30px;
+  padding: 50px 30px;
 }
 
-.section-footer {
-  height: 60px;
-  background: #f7f7f7;
+.section-break {
+  padding: 0;
+  height: 76px;
+  background: #1abd9b;
+
+  .contact-us {
+    color: #fff;
+    width: 72%;
+    min-width: 600px;
+    margin: 20px auto;
+
+    span {
+      font-size: 28px;
+      padding: 2px 20px;
+    }
+
+    button {
+      float: right;
+    }
+  }
 }
 
 section.main-image {
   background-image: url("main-img.jpg");
-  height: 700px;
+  height: 520px;
   background-size: cover;
   background-position: center;
 }
@@ -189,5 +219,73 @@ section.two {
 }
 
 section.three {
-  background-image: linear-gradient(45deg, #00a1dc, rgba(0, 161, 220, 0.7));
+}
+
+.button {
+  color: #fff;
+  background: #16a185;
+  padding: 8px 44px;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #19ab8d;
+  border-radius: 6px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+footer {
+  height: 60px;
+  background: #2c3f50;
+}
+
+.service {
+  display: block;
+  clear: both;
+
+  &:after {
+    content: "";
+    display: block;
+    height: 40px;
+    clear: both;
+  }
+
+  p {
+    margin: 6px 0;
+    line-height: 22px;
+  }
+
+  span {
+    display: inline-block;
+    &.left {
+      float: left;
+    }
+    &.right {
+      float: right;
+    }
+    &.text {
+      width: 68%;
+    }
+  }
+
+  .image {
+    width: 130px;
+    height: 130px;
+    background-repeat: no-repeat;
+
+    &.web {
+      background-image: url("web.png");
+    }
+
+    &.dashboard {
+      background-image: url("dashboard.png");
+    }
+
+    &.cloud {
+      background-image: url("cloud.png");
+    }
+
+    &.location {
+      background-image: url("locations.png");
+    }
+  }
 }
