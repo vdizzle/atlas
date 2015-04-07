@@ -3,6 +3,7 @@ $LOAD_PATH.unshift File.expand_path(File.dirname(__FILE__))
 require 'boot'
 require 'app/routes'
 require 'app/extensions'
+require 'app/models'
 
 module Atlas
   class App < Sinatra::Base
