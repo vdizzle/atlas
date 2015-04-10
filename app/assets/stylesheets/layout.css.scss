@@ -6,7 +6,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #939393;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 200;
   color: #939393;
   line-height: 1.65em;
   height:100%;
@@ -17,26 +17,31 @@ body {
 
 h1 {
   font-size: 64px;
-  font-weight: 300;
+  line-height: 64px;
+  font-weight: 200;
 }
 
 h2 {
-  font-size: 52px;
+  font-size: 40px;
   color: #fff;
+  line-height: 60px;
+  font-weight: 200;
 
   &.main {
-    line-height: 60px;
+    width: 40%;
   }
 }
 
 h5 {
   color: #818181;
   font-size: 16px;
+  font-weight: 200;
 }
 
 p {
   font-size: 18px;
   line-height: 1.65em;
+  text-align: justify;
 }
 
 .white {
@@ -69,6 +74,7 @@ p {
 
 .narrow-container {
   width: 48%;
+  min-width: 600px;
 }
 
 nav {
@@ -103,7 +109,7 @@ nav.main {
 
       a {
         text-decoration: none;
-        font-size: 19px;
+        font-size: 16px;
         color: #fff;
         transition: color .3s;
 
@@ -138,23 +144,24 @@ nav.scrolled {
 section {
   position: relative;
   overflow: hidden;
-  padding: 50px 30px;
+  padding: 20px;
 }
 
 .section-break {
   padding: 0;
   height: 76px;
-  background: #1abd9b;
+  background: #3bb2d0;
 
-  .contact-us {
+  .contact-us-banner {
     color: #fff;
     width: 72%;
-    min-width: 600px;
+    min-width: 1000px;
     margin: 20px auto;
 
     span {
       font-size: 28px;
-      padding: 2px 20px;
+      display: inline-block;
+      padding: 6px 20px;
     }
 
     button {
@@ -163,14 +170,12 @@ section {
   }
 }
 
-section.main-image {
-  background-image: url("bw3.jpg");
-  height: 520px;
+section.main {
+  background-image: url("main.jpg");
   background-size: cover;
-  background-position: center;
-}
-
-section.one {
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 729px;
   padding-top: 210px;
 
   &:before {
@@ -191,12 +196,7 @@ section.one {
 
   .sub-header {
     font-size: 20px;
-    font-weight: 300;
   }
-}
-
-section.two {
-  background: #fff;
 }
 
 .feature-overview {
@@ -224,16 +224,54 @@ section.two {
   }
 }
 
-section.three {
+section.our-team {
+  background: #f7f7f7;
+
+  p.justify {
+    text-align: justify;
+  }
+
+  .people-involved {
+    .advised-by {
+      display: inline-block;
+      padding: 8px 24px;
+
+      img {
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        filter: grayscale(100%);
+
+        &.profile {
+          border-radius: 100%;
+        }
+      }
+      p.profile {
+        width: 400px;
+      }
+
+      .links {
+        a {
+          padding: 0 10px;
+        }
+      }
+
+      &:hover {
+        img {
+          -webkit-filter: grayscale(0%);
+          -moz-filter: grayscale(0%);
+          filter: grayscale(0%);
+        }
+      }
+    }
+  }
 }
 
 .button {
   color: #fff;
-  background: #16a185;
+  background: #2d9dba;
   padding: 8px 44px;
   font-size: 14px;
-  font-weight: 400;
-  border: 1px solid #19ab8d;
+  border: 1px solid #3d9dba;
   border-radius: 6px;
   cursor: pointer;
   box-sizing: border-box;
@@ -297,19 +335,40 @@ footer {
     &.cloud {
       background-image: url("cloud.png");
     }
-
-    &.location {
-      background-image: url("locations.png");
-    }
   }
 }
 
 .contact-us {
   .container {
     width: 60%;
+    .form-container {
+      float: left;
+      width: 45%;
+
+      .actions {
+        position: relative;
+        left: -58px;
+      }
+    }
+
+    .map-container {
+      float: right;
+      width: 45%;
+
+      .locations {
+        display: block;
+        width: 130px;
+        height: 130px;
+        background-image: url("locations.png");
+      }
+    }
   }
 }
 
 .actions {
   padding: 16px 0;
+}
+
+.bold {
+  font-weight: 400;
 }
