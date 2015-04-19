@@ -54,7 +54,17 @@ p {
 
 .logo {
   position: absolute;
-  top: 16px;
+  top: 32px;
+  font-size: 52px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
   img {
     width: 54px;
@@ -137,6 +147,9 @@ nav.right {
 nav.scrolled {
   background: #f7f7f7;
   ul.main li a {
+    color: #818181;
+  }
+  a.logo {
     color: #818181;
   }
 }
@@ -235,6 +248,7 @@ section.our-team {
     .advised-by {
       display: inline-block;
       padding: 8px 24px;
+      max-width:330px;
 
       img {
         -webkit-filter: grayscale(100%);
@@ -246,7 +260,7 @@ section.our-team {
         }
       }
       p.profile {
-        width: 400px;
+      //  width: 400px;
       }
 
       .links {
@@ -341,20 +355,30 @@ footer {
 .contact-us {
   .container {
     width: 60%;
+    display: table;
+    margin: 0 auto;
+    text-align:center;
+
+    .form-container,
+    .map-container {
+      display: inline-block;
+      max-width: 400px;
+      min-width: 360px;
+      padding: 8px 40px;
+    }
+
     .form-container {
-      float: left;
-      width: 45%;
+      label {
+        text-align: left;
+      }
 
       .actions {
         position: relative;
-        left: -58px;
+        left: -40px;
       }
     }
 
     .map-container {
-      float: right;
-      width: 45%;
-
       .locations {
         display: block;
         width: 130px;
