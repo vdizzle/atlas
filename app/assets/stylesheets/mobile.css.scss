@@ -68,7 +68,10 @@
     padding: 0px;
     .people-involved {
       .advised-by {
-        padding: 0px;
+        padding: 10px 0;
+        img.profile {
+          width: 64%;
+        }
       }
     }
   }
@@ -84,7 +87,6 @@
         max-width: 100%;
         min-width: 100%;
         padding: 0;
-
       }
     }
 
