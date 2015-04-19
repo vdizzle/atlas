@@ -248,7 +248,7 @@ section.our-team {
     .advised-by {
       display: inline-block;
       padding: 8px 24px;
-      max-width:330px;
+      max-width: 330px;
 
       img {
         -webkit-filter: grayscale(100%);
@@ -297,31 +297,19 @@ footer {
 }
 
 .service {
-  display: block;
-  clear: both;
-
-  &:after {
-    content: "";
-    display: block;
-    height: 40px;
-    clear: both;
-  }
-
-  p {
-    margin: 6px 0;
-    line-height: 22px;
-  }
+  display: table;
+  margin: 16px 0;
 
   span {
     display: inline-block;
-    &.left {
-      float: left;
-    }
-    &.right {
-      float: right;
-    }
+
     &.text {
-      width: 68%;
+      width: 80%;
+
+      p {
+        margin: 6px 24px;
+        line-height: 22px;
+      }
     }
   }
 
@@ -357,7 +345,7 @@ footer {
     width: 60%;
     display: table;
     margin: 0 auto;
-    text-align:center;
+    text-align: center;
 
     .form-container,
     .map-container {
@@ -368,13 +356,14 @@ footer {
     }
 
     .form-container {
-      label {
+      label,
+      input {
         text-align: left;
       }
 
       .actions {
         position: relative;
-        left: -40px;
+        left: 0px;
       }
     }
 
