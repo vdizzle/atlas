@@ -7,16 +7,22 @@ $(function() {
     }
   });
 
-  $('.who-we-are').click(function (event) {
+  $('a.who-we-are').click(function (event) {
     event.preventDefault();
     location.hash = $(event.target).attr('href');
-    $('body').scrollTo('section.one', 1000);
+    $('body').scrollTo('section.our-team', 1000);
   });
 
-  $('.what-we-do').click(function (event) {
+  $('a.what-we-do').click(function (event) {
     event.preventDefault();
     location.hash = $(event.target).attr('href');
-    $('body').scrollTo('section.two', 1000);
+    $('body').scrollTo('section.our-tradecraft', 1000);
+  });
+
+  $('a.contact-us').click(function (event) {
+    event.preventDefault();
+    location.hash = $(event.target).attr('href');
+    $('body').scrollTo('section.contact-us', 500);
   });
 
   $('form.contact-form button').click(function(event) {
