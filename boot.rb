@@ -6,6 +6,10 @@ $LOAD_PATH.unshift(File.join(ENV['RACK_ROOT'], 'lib'))
 require 'bundler'
 Bundler.setup
 
+require 'active_support'
+require 'active_support/core_ext'
+require 'erb'
+require 'yaml'
 require 'sinatra/base'
 require 'compass'
 require 'sass'
